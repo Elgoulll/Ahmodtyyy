@@ -1,0 +1,25 @@
+# Silver Capital Website - robots.txt
+# This file tells search engines how to crawl and index the site
+
+# Allow all robots by default
+User-agent: *
+Allow: /
+Disallow: /admin/
+Disallow: /private/
+Disallow: /temp/
+
+# Specific rules for search engines
+User-agent: Googlebot
+Allow: /
+
+User-agent: Bingbot
+Allow: /
+
+# Crawl delay (in seconds) - prevent server overload
+Crawl-delay: 1
+
+# Sitemap location
+Sitemap: https://example.com/sitemap.xml
+
+# Additional directive for faster indexing
+Request-rate: 1/1s

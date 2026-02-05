@@ -1,0 +1,62 @@
+/* Netlify Configuration for Silver Capital Website */
+
+[build]
+  command = "echo 'Static site build complete'"
+  publish = "/"
+
+/* Enable analytics */
+[analytics]
+  enabled = true
+
+/* Configure edge functions for enhanced performance and security */
+[functions]
+  directory = "functions"
+
+/* Set up redirects for better UX */
+[[redirects]]
+  from = "/admin"
+  to = "/404.html"
+  status = 404
+
+[[redirects]]
+  from = "/private"
+  to = "/404.html"
+  status = 404
+
+/* Configure headers for security and performance */
+[[headers]]
+  for = "/*"
+  [headers.values]
+    X-Content-Type-Options = "nosniff"
+    X-Frame-Options = "SAMEORIGIN"
+    X-XSS-Protection = "1; mode=block"
+    Referrer-Policy = "strict-origin-when-cross-origin"
+    Permissions-Policy = "geolocation=(), microphone=(), camera=()"
+    Cache-Control = "public, max-age=3600"
+
+[[headers]]
+  for = "/*.html"
+  [headers.values]
+    Cache-Control = "public, max-age=1800"
+
+[[headers]]
+  for = "/images/*"
+  [headers.values]
+    Cache-Control = "public, max-age=31536000, immutable"
+
+[[headers]]
+  for = "/*.css"
+  [headers.values]
+    Cache-Control = "public, max-age=31536000, immutable"
+
+[[headers]]
+  for = "/*.js"
+  [headers.values]
+    Cache-Control = "public, max-age=31536000, immutable"
+
+/* Form configuration for contact form */
+[forms]
+  name = "contact"
+  honeypot = "bot-field"
+  # After submission, redirect to success page
+  # post_submit_redirect = "/success"

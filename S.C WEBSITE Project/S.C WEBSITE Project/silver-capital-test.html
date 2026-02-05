@@ -1,0 +1,425 @@
+ <!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Silver Capital - Integrated Services and General Supplies</title>
+    <meta name="description" content="شركة العاصمة الفضية للخدمات المتكاملة والتوريدات العمومية - خدمات إدارية وقانونية شاملة">
+    <meta name="keywords" content="العاصمة الفضية, Silver Capital, خدمات إدارية, خدمات قانونية, توريدات عمومية, مصر">
+    <meta name="author" content="Silver Capital">
+    <meta property="og:title" content="العاصمة الفضية - Silver Capital">
+    <meta property="og:description" content="شركة رائدة في الخدمات الإدارية والقانونية والتوريدات العمومية">
+    <meta property="og:type" content="website">
+    <!-- Accessibility Meta Tags -->
+    <meta name="theme-color" content="#667eea">
+    <link rel="icon" type="image/png" href="images/logo.png">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&family=Montserrat:wght@300;400;500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="css/styles.css">
+    
+    <!-- Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-XXXXXXXXXX"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+        gtag('config', 'G-XXXXXXXXXX');
+    </script>
+</head>
+<body>
+    <!-- Header -->
+    <header class="navbar-wrapper">
+        <nav class="navbar-main">
+            <div class="container">
+                <!-- Brand Section -->
+                <div class="navbar-brand-custom">
+                    <img src="images/logo.png" alt="Silver Capital Logo" class="brand-logo">
+                    <div class="brand-text-wrapper">
+                        <span class="brand-text">العاصمة الفضية</span>
+                        <span class="brand-subtitle">للخدمات المتكاملة والتوريدات العمومية</span>
+                    </div>
+                </div>
+
+                <!-- Navigation Links -->
+                <ul class="navbar-nav">
+                    <li class="nav-item">
+                        <a class="nav-link-custom" href="#home">
+                            <i class="fas fa-home nav-icon"></i>
+                            <span id="nav-home">الرئيسية</span>
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link-custom" href="#about">
+                            <i class="fas fa-info-circle nav-icon"></i>
+                            <span id="nav-about">من نحن</span>
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link-custom" href="#services">
+                            <i class="fas fa-briefcase nav-icon"></i>
+                            <span id="nav-services">خدماتنا</span>
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link-custom" href="#vision">
+                            <i class="fas fa-lightbulb nav-icon"></i>
+                            <span id="nav-vision">رؤيتنا</span>
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link-custom" href="#structure">
+                            <i class="fas fa-sitemap nav-icon"></i>
+                            <span id="nav-structure">الهيكل</span>
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link-custom" href="#team">
+                            <i class="fas fa-users nav-icon"></i>
+                            <span id="nav-team">فريقنا</span>
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link-custom" href="#contact">
+                            <i class="fas fa-envelope nav-icon"></i>
+                            <span id="nav-contact">التواصل</span>
+                        </a>
+                    </li>
+                </ul>
+
+                <!-- Action Buttons -->
+                <div class="navbar-buttons">
+                    <button type="button" class="btn-lang" id="langSwitch" aria-label="Switch to English">
+                        <i class="fas fa-globe"></i> English
+                    </button>
+                </div>
+
+                <!-- Mobile Toggle -->
+                <button class="navbar-toggler-custom" type="button" id="navbarToggle" aria-label="Toggle navigation" aria-expanded="false">
+                    <span class="navbar-toggler-icon">
+                        <span></span>
+                    </span>
+                </button>
+            </div>
+        </nav>
+
+        <!-- Mobile / Off-canvas Menu (moved outside navbar to avoid overflow:hidden clipping) -->
+        <div id="navbarMobile" class="navbar-mobile" aria-hidden="true"></div>
+        <div id="mobileOverlay" class="mobile-overlay" aria-hidden="true"></div>
+    </header>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero-section" style="background: linear-gradient(135deg, rgba(0,0,0,0.4) 0%, rgba(0,0,0,0.4) 100%), url('images/hero-bg.jpg') no-repeat center center; background-size: cover;">
+        <div class="hero-overlay"></div>
+        <div class="container-fluid px-3">
+            <div class="row h-100 align-items-center justify-content-center">
+                <div class="col-12 col-md-8 col-lg-6 text-center">
+                    <h1 class="hero-title">مرحباً بكم</h1>
+                    <p class="hero-subtitle">في العاصمة الفضية</p>
+                    <a href="#about" class="btn btn-primary btn-lg" aria-label="ابدأ الآن والتعرف على خدماتنا">ابدأ الآن</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="py-5" style="background-color: #F8FAFC;">
+        <div class="container px-3">
+            <h2 class="section-title text-center mb-5">من نحن</h2>
+            <div class="row">
+                <div class="col-12 col-lg-8 mx-auto text-center">
+                    <p class="lead" style="color: #4B5563; font-size: 1.1rem;">نحن شركة العاصمة الفضية للخدمات الإدارية والقانونية والتوريدات العمومية. نمتلك خبرة أكثر من 20 عاماً في كافة مجالات الخدمات الإدارية والقانونية للأفراد والمؤسسات والشركات المصرية والأجنبية وخدمات رجال الأعمال داخل وخارج مصر.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Vision, Mission, Values -->
+    <section id="vision" class="py-5" style="background-color: #F8FAFC;">
+        <div class="container px-3">
+            <h2 class="section-title text-center mb-5">رؤيتنا ورسالتنا وقيمنا</h2>
+            <div class="row g-3">
+                <div class="col-12 col-md-4 mb-4">
+                    <div class="card h-100 border-0 shadow">
+                        <div class="card-body text-center">
+                            <h5 class="card-title text-primary">رؤيتنا</h5>
+                            <p class="card-text">أن نكون من الشركات الرائدة في مجال الخدمات الإدارية والقانونية التي تتميز بالكفاءة والإبداع والثقة في تقديم الخدمات الإدارية والقانونية في مصر أو خارج مصر.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12 col-md-4 mb-4">
+                    <div class="card h-100 border-0 shadow">
+                        <div class="card-body text-center">
+                            <h5 class="card-title text-primary">رسالتنا</h5>
+                            <p class="card-text">أن نلبي احتياجات عملائنا الإدارية والقانونية بأعلى مستوى من الجودة والسرعة والدقة المهنية.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12 col-md-4 mb-4">
+                    <div class="card h-100 border-0 shadow">
+                        <div class="card-body text-center">
+                            <h5 class="card-title text-primary">قيمنا</h5>
+                            <p class="card-text">الالتزام بالقانون والعدل والشفافية والمسؤولية.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Services Section -->
+    <section id="services" class="py-5" style="background-color: #FFFFFF;">
+        <div class="container px-3">
+            <h2 class="section-title text-center mb-5">خدماتنا</h2>
+            <div class="row g-3">
+                <!-- Card 1 -->
+                <div class="col-12 col-lg-4 col-md-6 mb-4">
+                    <div class="card-service">
+                        <i class="fas fa-briefcase"></i>
+                        <h3 id="adminServiceTitle">الخدمات الإدارية</h3>
+                        <p id="adminServiceDesc">خدمات إدارية شاملة لإنشاء وتعديل الشركات والملفات التأمينية والضريبية...</p>
+                        <button type="button" class="btn-read-more" data-modal="adminModal" id="adminReadMore">اقرأ المزيد</button>
+                    </div>
+                </div>
+
+                <!-- Card 2 -->
+                <div class="col-12 col-lg-4 col-md-6 mb-4">
+                    <div class="card-service">
+                        <i class="fas fa-gavel"></i>
+                        <h3 id="legalServiceTitle">الخدمات القانونية</h3>
+                        <p id="legalServiceDesc">خدمات قانونية شاملة تغطي الترافع والاستشارات وصياغة العقود...</p>
+                        <button type="button" class="btn-read-more" data-modal="legalModal" id="legalReadMore">اقرأ المزيد</button>
+                    </div>
+                </div>
+
+                <!-- Card 3 -->
+                <div class="col-12 col-lg-4 col-md-6 mb-4">
+                    <div class="card-service">
+                        <i class="fas fa-truck"></i>
+                        <h3 id="logisticsServiceTitle">الخدمات اللوجستية</h3>
+                        <p id="logisticsServiceDesc">خدمات لوجستية وتوريدات عمومية متكاملة تشمل الجمارك والتأشيرات...</p>
+                        <button type="button" class="btn-read-more" data-modal="logisticsModal" id="logisticsReadMore">اقرأ المزيد</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Service Modals -->
+    <div id="adminModal" class="modal-backdrop">
+        <div class="modal-content">
+            <button type="button" class="modal-close-btn">&times;</button>
+            <h2 id="adminModalTitle" class="modal-title">الخدمات الإدارية</h2>
+            <div id="adminModalBody" class="modal-body">
+                <p><strong>نقدم خدمات إدارية شاملة تغطي جميع جوانب العمليات الإدارية للشركات والمؤسسات:</strong></p>
+                <ul>
+                    <li>خدمات إنشاء وتعديل الشركات بكافة أنواعها (وزارة الإستثمار – السجل التجاري...الخ)</li>
+                    <li>خدمات إنشاء وتعديل ومتابعة الملفات التأمينية للشركات والأفراد</li>
+                    <li>خدمات إنشاء وتعديل ومتابعة الملفات الضريبية بكافة أنواعها</li>
+                    <li>خدمات إنشاء وتعديل ومتابعة ملف الشركة لدى مكتب العمل</li>
+                    <li>خدمات إستقدام العمالة الأجنبية طبقاً لإحتياجات الشركة</li>
+                    <li>خدمات توفير العمالة المصرية المدربة</li>
+                    <li>خدمات عقد وتنظيم ورش العمل والمؤتمرات والمعارض</li>
+                    <li>خدمات الإستشارات الإدارية بكافة أنواعها</li>
+                    <li>تقديم الإستشارات الإدارية المتعلقة بتنفيذ أعمال الشركة</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+
+    <div id="legalModal" class="modal-backdrop">
+        <div class="modal-content">
+            <button type="button" class="modal-close-btn">&times;</button>
+            <h2 id="legalModalTitle" class="modal-title">الخدمات القانونية</h2>
+            <div id="legalModalBody" class="modal-body">
+                <p><strong>نقدم الخدمات القانونية الشاملة في مختلف فروع القانون:</strong></p>
+                <ul>
+                    <li><strong>الترافع والتمثيل القضائي:</strong> نمثل عملائنا أمام المحاكم والهيئات القضائية والإدارية في جميع درجات التقاضي</li>
+                    <li><strong>الإستشارات والدراسات القانونية:</strong> نقدم المشورة القانونية لعملائنا في جميع المسائل</li>
+                    <li><strong>صياغة العقود والاتفاقيات:</strong> نصاغ جميع أنواع العقود بطريقة تضمن حفظ حقوقك</li>
+                    <li><strong>دعم رواد الأعمال:</strong> نساعد في إنشاء وتسجيل الشركات</li>
+                    <li><strong>المنازعات المدنية والشركات:</strong> معالجة المنازعات في مختلف المجالات</li>
+                    <li>إنشاء وتعديل ومتابعة العقود بكافة أنواعها</li>
+                    <li>صياغة ومراجعة الإتفاقيات والعقود واللوائح</li>
+                    <li>صياغة الخطابات القانونية ودراسة الردود</li>
+                    <li>مراجعة المراسلات وإبداء الرأي القانوني</li>
+                    <li>خدمات التفاوض مع الجهات المختلفة</li>
+                    <li>الأبحاث القانونية</li>
+                    <li>تنظيم عقود العمل واللوائح الإدارية</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+
+    <div id="logisticsModal" class="modal-backdrop">
+        <div class="modal-content">
+            <button type="button" class="modal-close-btn">&times;</button>
+            <h2 id="logisticsModalTitle" class="modal-title">الخدمات اللوجستية والتوريدات</h2>
+            <div id="logisticsModalBody" class="modal-body">
+                <p><strong>نقدم خدمات لوجستية وتوريدات عمومية متكاملة:</strong></p>
+                <ul>
+                    <li>إجراءات الجمارك</li>
+                    <li>تراخيص السيارات والمعدات</li>
+                    <li>الحصول على التأشيرات</li>
+                    <li>الأرشفة والطباعة</li>
+                    <li>خدمات الشحن والنقل</li>
+                    <li>إدارة المخازن والتخزين</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+
+    <!-- Organizational Structure -->
+    <section id="structure" class="py-5">
+        <div class="container px-3">
+            <h2 id="structureTitle" class="section-title text-center mb-5">الهيكل التنظيمي</h2>
+            <div class="row text-center g-3">
+                <div class="col-6 col-md-3 mb-3">
+                    <div class="structure-item">
+                        <i class="fas fa-users fa-2x text-primary mb-2"></i>
+                        <h6 id="struct-admin">قسم الخدمات الإدارية</h6>
+                    </div>
+                </div>
+                <div class="col-6 col-md-3 mb-3">
+                    <div class="structure-item">
+                        <i class="fas fa-balance-scale fa-2x text-primary mb-2"></i>
+                        <h6 id="struct-legal">قسم الخدمات القانونية</h6>
+                    </div>
+                </div>
+                <div class="col-6 col-md-3 mb-3">
+                    <div class="structure-item">
+                        <i class="fas fa-shipping-fast fa-2x text-primary mb-2"></i>
+                        <h6 id="struct-logistics">قسم الخدمات اللوجيستية</h6>
+                    </div>
+                </div>
+                <div class="col-6 col-md-3 mb-3">
+                    <div class="structure-item">
+                        <i class="fas fa-boxes fa-2x text-primary mb-2"></i>
+                        <h6 id="struct-supplies">قسم التوريدات العمومية</h6>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Team Section -->
+    <section id="team" class="py-5 bg-light">
+        <div class="container px-3">
+            <h2 id="teamTitle" class="section-title text-center mb-5">فريق العمل</h2>
+            <div class="row">
+                <div class="col-12 col-lg-8 mx-auto text-center">
+                    <p class="lead mb-4" id="team-description">فريق عملنا يتكون من محامين ومستشارين قانونيين ومحاسبين قانونيين مؤهلين ومتخصصين في مجالاتهم، يتمتعون بالخبرة والكفاءة والإلمام بأحدث التطورات القانونية والإدارية.</p>
+                    <div class="row g-3">
+                        <div class="col-12 col-md-4 mb-4">
+                            <div class="team-member">
+                                <div class="team-icon" aria-hidden="true"><i class="fas fa-gavel"></i></div>
+                                <h6 id="member-lawyer">محامي متخصص</h6>
+                                <p class="small text-muted" id="member-lawyer-role">الخدمات القانونية</p>
+                            </div>
+                        </div>
+                        <div class="col-12 col-md-4 mb-4">
+                            <div class="team-member">
+                                <div class="team-icon" aria-hidden="true"><i class="fas fa-calculator"></i></div>
+                                <h6 id="member-accountant">محاسب قانوني</h6>
+                                <p class="small text-muted" id="member-accountant-role">الخدمات المالية</p>
+                            </div>
+                        </div>
+                        <div class="col-12 col-md-4 mb-4">
+                            <div class="team-member">
+                                <div class="team-icon" aria-hidden="true"><i class="fas fa-user-tie"></i></div>
+                                <h6 id="member-consultant">مستشار قانوني</h6>
+                                <p class="small text-muted" id="member-consultant-role">الاستشارات</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="py-5">
+        <div class="container px-3">
+            <h2 class="section-title text-center mb-5" id="contactTitle">تواصل معنا</h2>
+            <div class="row g-4">
+                <div class="col-12 col-lg-6 mb-4">
+                    <h5 id="contactInfoTitle">معلومات التواصل</h5>
+                    <div class="contact-info">
+                        <p id="location-1"><i class="fas fa-map-marker-alt text-primary me-2"></i> مبنى رقم 6 شارع الزهور - فيصل – الجيزة</p>
+                        <p id="location-2"><i class="fas fa-map-marker-alt text-primary me-2"></i> مبنى رقم 222 شارع جسر السويس – القاهرة</p>
+                        <p id="location-3"><i class="fas fa-map-marker-alt text-primary me-2"></i> فيلا رقم 40 قرية الريميفيرا – طريق القرى – الغردقة</p>
+                        <p id="phone-number"><i class="fas fa-phone text-primary me-2"></i> 01014887070</p>
+                        <p><i class="fas fa-clock text-primary me-2"></i> <span id="phoneHours">الهاتف: 9:00 ص - 4:00 م</span> | <span id="whatsappHours">واتساب: 24/7</span></p>
+                    </div>
+                </div>
+                <div class="col-12 col-lg-6">
+                    <form id="contactForm" name="contact" method="POST" netlify netlify-honeypot="bot-field">
+                        <input type="hidden" name="form-name" value="contact">
+                        <div style="display:none">
+                            <label>Don't fill this out if you're human: <input name="bot-field"></label>
+                        </div>
+                        <div class="mb-3">
+                            <label for="name" class="form-label" id="nameLabel">الاسم</label>
+                            <input type="text" class="form-control" id="name" name="name" required>
+                        </div>
+                        <div class="row g-3">
+                            <div class="col-12 col-md-6">
+                            <label for="email" class="form-label" id="emailLabel">البريد الإلكتروني</label>
+                                <input type="email" class="form-control" id="email" name="email" required>
+                            </div>
+                            <div class="col-12 col-md-6">
+                                <label for="phone" class="form-label" id="phoneLabel">رقم الهاتف</label>
+                                <input type="tel" class="form-control" id="phone" name="phone" required>
+                            </div>
+                        </div>
+                        <div class="mb-3">
+                            <label for="service" class="form-label" id="serviceLabel">نوع الخدمة</label>
+                            <select class="form-control" id="service" name="service" required>
+                                <option value="">-- اختر الخدمة --</option>
+                                <option value="administrative">الخدمات الإدارية</option>
+                                <option value="government">الخدمات الحكومية</option>
+                                <option value="logistics">الخدمات اللوجيستية</option>
+                                <option value="legal">الخدمات القانونية</option>
+                                <option value="supplies">التوريدات العمومية</option>
+                            </select>
+                        </div>
+                        <div class="mb-3">
+                            <label for="description" class="form-label" id="descriptionLabel">وصف الخدمة</label>
+                            <textarea class="form-control" id="description" name="description" rows="4" placeholder="اكتب وصفاً مختصراً للخدمة المطلوبة..."></textarea>
+                        </div>
+                        <div class="mb-3">
+                            <label for="attachment" class="form-label" id="attachmentLabel">إرفاق ملف</label>
+                            <input type="file" class="form-control" id="attachment" name="attachment">
+                        </div>
+                        <button type="submit" class="btn btn-primary w-100" id="submitBtn">إرسال</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-dark text-light py-4">
+        <div class="container px-3">
+            <div class="row text-right text-md-start">
+                <div class="col-12 col-md-6 mb-3 mb-md-0">
+                    <p class="mb-0">&copy; 2026 العاصمة الفضية. جميع الحقوق محفوظة.</p>
+                </div>
+                <div class="col-12 col-md-6 text-center text-md-end">
+                    <a href="https://wa.me/201014887070" class="text-light me-3" target="_blank"><i class="fab fa-whatsapp fa-lg"></i></a>
+                    <a href="#" class="text-light me-3"><i class="fab fa-facebook fa-lg"></i></a>
+                    <a href="#" class="text-light"><i class="fab fa-linkedin fa-lg"></i></a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- WhatsApp Widget -->
+    <a href="https://wa.me/201014887070" class="whatsapp-float" target="_blank">
+        <i class="fab fa-whatsapp"></i>
+    </a>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="js/scripts.js"></script>
+</body>
+</html>
